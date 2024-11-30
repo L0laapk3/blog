@@ -32,11 +32,11 @@ jobs:
 
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
-      if: github.ref == ${{ github.event.repository.default_branch }}
+      if: github.ref == '${{ github.event.repository.default_branch }}'
       with:
         path: 'build/'
 
     - name: Deploy to GitHub Pages
       id: deployment
-      if: github.ref == ${{ github.event.repository.default_branch }}
+      if: github.ref == '${{ github.event.repository.default_branch }}'
       uses: actions/deploy-pages@v4
