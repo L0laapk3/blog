@@ -1,11 +1,12 @@
 <script lang="ts">
-	import { POSTS_LIST } from '$lib/shared/posts.constant';
-
 	import PostCard from './post-card.svelte';
 	import PostListItem from './post-list-item.svelte';
+	import type { PageData } from './$types';
 
-	const featuredPosts = POSTS_LIST.filter((post) => post.featured);
-	const posts = POSTS_LIST.filter((post) => !post.featured);
+    export let data: PageData;
+
+	const featuredPosts = data.posts.filter((post) => post.featured);
+	const otherPosts = data.posts.filter((post) => !post.featured);
 </script>
 
 <div class="relative bg-white px-4 pt-16 pb-20 sm:px-6 lg:px-8 lg:pb-28">
@@ -23,7 +24,7 @@
 
 		<!-- Lists -->
 		<ul class="divide-y divide-gray-200">
-			{#each posts as { url, title, description, date }}
+			{#each otherPosts as { url, title, description, date }}
 				<PostListItem {url} {title} {description} {date} />
 			{/each}
 		</ul>

@@ -1,4 +1,4 @@
-export const POSTS_LIST = await Promise.all(
+export const posts = await Promise.all(
 	Object.entries(import.meta.glob("/src/routes/\\(blog\\)/(**)/+page.*"))
 		.map(async ([path, promise]) => {
 			const mod: any = await promise();
