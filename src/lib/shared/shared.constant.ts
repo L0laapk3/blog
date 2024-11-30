@@ -1,16 +1,15 @@
 export const POSTS_LIST = [
 	{
-		title: 'Best online text to speech generators',
-		url: '/best-online-text-to-speech-generators',
-		description:
-			'A high-level view of features and pricing from the newest and best online text to speech generators on the market',
-		author: 'Kyle',
-		date: '2023-02-05',
+		title: 'Solving Former fast',
+		url: 'former',
+		description: 'A high-level view of features and pricing from the newest and best online text to speech generators on the market',
+		author: 'L0laapk3',
+		date: '2023-11-30',
 		isFeatured: true
 	},
 	// {
 	// 	title: 'Best free online text to speech generators',
-	// 	url: '/best-free-online-text-to-speech-generators',
+	// 	url: 'best-free-online-text-to-speech-generators',
 	// 	description:
 	// 		'A high-level view of features and pricing from the newest and best free online text to speech generators on the market',
 	// 	author: 'Kyle',

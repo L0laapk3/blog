@@ -18,7 +18,7 @@
 	<div class="flex flex-1 flex-col justify-between bg-white p-6">
 		<div class="flex-1">
 			<p class="text-sm font-medium text-indigo-600">{tags}</p>
-			<a href={base}{url} class="mt-2 block">
+			<a href={base}/{url} class="mt-2 block">
 				<p class="text-2xl font-semibold text-gray-900 hover:bg-gradient-to-r hover:from-emerald-400 hover:to-cyan-400 hover:bg-clip-text hover:text-transparent hover:cursor-pointer" data-sveltekit-preload-data="eager">
 					{title}
 				</p>
