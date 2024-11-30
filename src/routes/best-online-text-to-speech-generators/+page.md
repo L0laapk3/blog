@@ -1,4 +1,4 @@
-<!-- ---
+---
 title: 'Best online text to speech generators'
 description: 'A high-level view of features and pricing from the newest and best online text to speech generators on the market'
 author: 'Kyle'
@@ -30,4 +30,4 @@ They offer some of the best prices along with one-time prepaid options that go f
 - Voices from Google, Microsoft, and Amazon
 ...
 
-<a href="https://beepbooply.com" target="_blank" rel="noopener noreferrer">beepbooply</a> -->
+<a href="https://beepbooply.com" target="_blank" rel="noopener noreferrer">beepbooply</a>
