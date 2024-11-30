@@ -5,7 +5,6 @@
 	export let title = '';
 	export let description = '';
 	export let date = '';
-	export let tags = '';
 
 	import { browser } from '$app/environment'
 	$: publishedAt = DateTime.fromISO(date, { zone: 'utc' }).toLocaleString(DateTime.DATE_FULL, { locale: browser ? undefined : "en-GB", zone: "utc" });
@@ -14,7 +13,6 @@
 <article>
 	<div class="mx-auto max-w-6xl py-16 px-4 sm:pt-24 sm:px-6 lg:px-8">
 		<div class="text-center">
-			<!-- <h2 class="text-lg uppercase font-semibold text-gray-900">{tags}</h2> -->
 			<h1 class="mt-5 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl">
 			{title}
 			</h1>

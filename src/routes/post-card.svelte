@@ -7,7 +7,6 @@
 	export let title = '';
 	export let description = '';
 	export let date = '';
-	export let tags = '';
 
 	import { browser } from '$app/environment'
 	$: publishedAt = DateTime.fromISO(date, { zone: 'utc' }).toLocaleString(DateTime.DATE_FULL, { locale: browser ? undefined : 'en-GB', zone: 'utc' });
@@ -16,7 +15,6 @@
 <div class="flex flex-col overflow-hidden rounded-lg shadow-lg border border-gray-200">
 	<div class="flex flex-1 flex-col justify-between bg-white p-6">
 		<div class="flex-1">
-			<p class="text-sm font-medium text-indigo-600">{tags}</p>
 			<a href={base}/{url} class="mt-2 block">
 				<p class="text-2xl font-semibold text-gray-900 hover:bg-gradient-to-r hover:from-emerald-400 hover:to-cyan-400 hover:bg-clip-text hover:text-transparent hover:cursor-pointer" data-sveltekit-preload-data="eager">
 					{title}
