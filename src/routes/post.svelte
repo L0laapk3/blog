@@ -5,6 +5,7 @@
 	export let title = '';
 	export let description = '';
 	export let date = '';
+	export let tags = '';
 
 	import { browser } from '$app/environment'
 	$: publishedAt = DateTime.fromISO(date, { zone: 'utc' }).toLocaleString(DateTime.DATE_FULL, { locale: browser ? undefined : "en-GB", zone: "utc" });

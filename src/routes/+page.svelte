@@ -1,11 +1,11 @@
 <script lang="ts">
-	import { POSTS_LIST } from '$lib/shared/shared.constant';
+	import { POSTS_LIST } from '$lib/shared/posts.constant';
 
 	import PostCard from './post-card.svelte';
 	import PostListItem from './post-list-item.svelte';
 
-	const featuredPosts = POSTS_LIST.filter((post) => post.isFeatured);
-	const posts = POSTS_LIST.filter((post) => !post.isFeatured);
+	const featuredPosts = POSTS_LIST.filter((post) => post.featured);
+	const posts = POSTS_LIST.filter((post) => !post.featured);
 </script>
 
 <div class="relative bg-white px-4 pt-16 pb-20 sm:px-6 lg:px-8 lg:pb-28">
