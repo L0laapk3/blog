@@ -7,7 +7,8 @@
 	export let publishedAtIso = '';
 	// export let author = '';
 
-	$: publishedAt = DateTime.fromISO(publishedAtIso).toLocaleString(DateTime.DATE_FULL);
+	import { browser } from '$app/environment'
+	$: publishedAt = DateTime.fromISO(publishedAtIso).setZone("utc").toLocaleString(DateTime.DATE_FULL, { locale: browser ? undefined : 'en-GB' });
 </script>
 
 <article>

@@ -10,7 +10,8 @@
 	export let date = '';
 	export let tags = '';
 
-	$: publishedAt = DateTime.fromISO(date).toLocaleString(DateTime.DATE_FULL);
+	import { browser } from '$app/environment'
+	$: publishedAt = DateTime.fromISO(date).setZone("utc").toLocaleString(DateTime.DATE_FULL, { locale: browser ? undefined : 'en-GB' });
 </script>
 
 <div class="flex flex-col overflow-hidden rounded-lg shadow-lg border border-gray-200">
