@@ -1,6 +1,5 @@
 <script lang="ts">
     import { base } from '$app/paths';
-
 	import { DateTime } from 'luxon';
 
 	export let url = '';
