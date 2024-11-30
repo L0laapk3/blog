@@ -6,7 +6,6 @@ publishedAtIso: '2023-02-05'
 ---
 
 <script>
-...
 </script>
 
 ## Current state of text to speech AI voice generators
