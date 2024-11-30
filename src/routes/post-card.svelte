@@ -11,7 +11,7 @@
 	export let tags = '';
 
 	import { browser } from '$app/environment'
-	$: publishedAt = DateTime.fromISO(date).setZone("utc").toLocaleString(DateTime.DATE_FULL, { locale: browser ? undefined : 'en-GB' });
+	$: publishedAt = DateTime.fromISO(date, { zone: 'utc' }).toLocaleString(DateTime.DATE_FULL, { locale: browser ? undefined : 'en-GB', zone: 'utc' });
 </script>
 
 <div class="flex flex-col overflow-hidden rounded-lg shadow-lg border border-gray-200">
