@@ -1,7 +1,7 @@
 ---
 title: 'Solving Former fast'
 description: 'A high-level view of features and pricing from the newest and best online text to speech generators on the market'
-date: '2023-11-30'
+date: '2024-11-30'
 featured: true
 ---
 
