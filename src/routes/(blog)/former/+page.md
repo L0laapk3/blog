@@ -1,12 +1,9 @@
 ---
-title: 'Best online text to speech generators'
+title: 'Solving Former fast'
 description: 'A high-level view of features and pricing from the newest and best online text to speech generators on the market'
-author: 'Kyle'
-publishedAtIso: '2023-02-05'
+date: '2023-11-30'
+featured: true
 ---
-
-<script>
-</script>
 
 ## Current state of text to speech AI voice generators
 

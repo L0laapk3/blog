@@ -16,15 +16,15 @@
 			</h1>
 		</div>
 		<div class="mx-auto mt-12 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-3">
-			{#each featuredPosts as { url, title, description, author, date }}
-				<PostCard {url} {title} {description} {author} {date} />
+			{#each featuredPosts as { url, title, description, date }}
+				<PostCard {url} {title} {description} {date} />
 			{/each}
 		</div>
 
 		<!-- Lists -->
 		<ul class="divide-y divide-gray-200">
-			{#each posts as { url, title, description, author, date }}
-				<PostListItem {url} {title} {description} {author} {date} />
+			{#each posts as { url, title, description, date }}
+				<PostListItem {url} {title} {description} {date} />
 			{/each}
 		</ul>
 	</div>

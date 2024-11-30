@@ -4,11 +4,10 @@
 
 	export let title = '';
 	export let description = '';
-	export let publishedAtIso = '';
-	// export let author = '';
+	export let date = '';
 
 	import { browser } from '$app/environment'
-	$: publishedAt = DateTime.fromISO(publishedAtIso, { zone: 'utc' }).toLocaleString(DateTime.DATE_FULL, { locale: browser ? undefined : "en-GB", zone: "utc" });
+	$: publishedAt = DateTime.fromISO(date, { zone: 'utc' }).toLocaleString(DateTime.DATE_FULL, { locale: browser ? undefined : "en-GB", zone: "utc" });
 </script>
 
 <article>

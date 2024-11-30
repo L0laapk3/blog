@@ -4,7 +4,6 @@
 	export let url = '';
 	export let title = '';
 	export let description = '';
-	export let author = '';
 	export let date = '';
 	export let tags = '';
 </script>

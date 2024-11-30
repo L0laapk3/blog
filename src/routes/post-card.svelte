@@ -6,7 +6,6 @@
 	export let url = '';
 	export let title = '';
 	export let description = '';
-	export let author = '';
 	export let date = '';
 	export let tags = '';
 
@@ -28,7 +27,6 @@
 			</a>
 		</div>
 		<div class="mt-6 flex flex-col justify-center">
-			<!-- <p class="text-sm font-medium text-gray-900">{author}</p> -->
 			<div class="flex space-x-1 text-sm text-gray-500">
 				<span>{publishedAt}</span>
 			</div>
