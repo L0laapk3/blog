@@ -6,7 +6,7 @@
 	export let date = '';
 
 	import { browser } from '$app/environment'
-	$: publishedAt = DateTime.fromISO(date, { zone: 'utc' }).toLocaleString(DateTime.DATE_FULL, { locale: browser ? undefined : "en-GB", zone: "utc" });
+	$: publishedAt = DateTime.fromISO(date).toLocaleString(DateTime.DATE_FULL, { locale: browser ? undefined : "en-GB" });
 </script>
 
 <article>
