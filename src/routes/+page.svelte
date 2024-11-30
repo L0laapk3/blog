@@ -1,6 +1,6 @@
 <script lang="ts">
-	import PostCard from './post-card.svelte';
-	import PostListItem from './post-list-item.svelte';
+	import PostCard from '$lib/post/post-card.svelte';
+	import PostListItem from '$lib/post//post-list-item.svelte';
 	import type { PageData } from './$types';
 
     export let data: PageData;
