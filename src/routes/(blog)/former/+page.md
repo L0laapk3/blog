@@ -5,7 +5,7 @@ date: '2024-11-30'
 featured: true
 ---
 
-# Current state of text to speech AI voice generators
+## Current state of text to speech AI voice generators
 
 Text to speech technology, also known as speech synthesis, is software that converts written text into spoken words.
 
@@ -15,7 +15,7 @@ This article provides a high-level view of features and pricing from the newest 
 
 <div id="beepbooply"></div>
 
-# Beepbooply
+## Beepbooply
 
 Beepbooply is a new online text to speech generator created to provide access to the latest voice models at the best prices.
 
