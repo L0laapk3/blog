@@ -4,6 +4,7 @@
 </script>
 
 <svelte:head>
+	<meta name="darkreader-lock">
     {@html `<script>const recolor = () => {${nightwind.init()}}; if (window.matchMedia) window.matchMedia("(prefers-color-scheme: dark)").addListener(recolor); recolor();</script>`}
 </svelte:head>
 

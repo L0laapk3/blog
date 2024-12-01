@@ -17,7 +17,7 @@
 		</div>
 		<div class="mt-6 flex flex-col justify-center">
 			<div class="flex space-x-1 text-sm text-gray-500">
-				<span>{getLocaleDate(post)}</span>
+				<span>{getLocaleDate(post.date)}</span>
 			</div>
 		</div>
 	</div>

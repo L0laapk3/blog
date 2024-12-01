@@ -2,7 +2,7 @@
 export default {
 	content: ['./src/**/*.{html,js,svelte,ts,md,svx}'],
 	plugins: [
-		// require('@tailwindcss/forms'),
+		require('@tailwindcss/forms'),
 		require('@tailwindcss/typography'),
 		require("nightwind"),
 	],

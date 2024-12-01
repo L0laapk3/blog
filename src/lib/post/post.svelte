@@ -17,7 +17,7 @@
 	</div>
 
 	<section class="w-full bg-white pb-16 px-4">
-		<div class="prose max-w-4xl mx-auto text-gray-900">
+		<div class="prose dark:prose-invert max-w-4xl mx-auto text-gray-900">
 			<slot/>
 		</div>
 	</section>
