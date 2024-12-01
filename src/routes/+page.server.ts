@@ -1,8 +1,8 @@
 import type { PageServerLoad } from './$types';
-import { posts } from '$lib/server/postList.constant';
+import { posts } from '$lib/server/posts.constant';
 
 export const load: PageServerLoad = async () => {
 	return {
-		posts: posts
+		posts: Object.values(posts),
 	};
 };

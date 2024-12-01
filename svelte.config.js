@@ -1,6 +1,7 @@
 import adapter from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
-import { mdsvex } from 'mdsvex';
+import { mdsvex, default_frontmatter } from 'mdsvex';
+
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -16,7 +17,7 @@ const config = {
 	kit: {
 		adapter: adapter(),
 		paths: {
-			base: process.env.NODE_ENV === 'production' ? '/blog' : '',
+			base: '/blog',
 		},
 	}
 };
