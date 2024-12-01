@@ -4,8 +4,8 @@ export default {
 	theme: {
 		extend: {}
 	},
-	corePlugins: {
-		preflight: false,
-	},
-	plugins: []
+	plugins: [
+		require('@tailwindcss/forms'),
+		require('@tailwindcss/typography'),
+	],
 };
