@@ -1,5 +1,5 @@
 ---
-title: 'Solving Former <em>fast</em>'
+title: '[WIP] Solving Former <em>fast</em>'
 description: 'A high-level view of features and pricing from the newest and best online text to speech generators on the market'
 date: '2024-11-30'
 featured: true
