@@ -5,27 +5,14 @@ date: '2024-11-30'
 featured: true
 ---
 
-## Current state of text to speech AI voice generators
+## Introduction
 
-Text to speech technology, also known as speech synthesis, is software that converts written text into spoken words.
+I was recently challenged to try to solve a game called "[Former](https://www.nrk.no/spill/former-1.17105310)". There have been some others who achieved some success using heuristic approaches in parallel to my attempt, but I wanted to go big and *prove* that the found solution is optimal.
 
-Text to speech technology has greatly improved over the past few years, leading to more realistic and natural-sounding voices. From creating more content for social media and platforms like Youtube and Tiktok, to improving accessibility for those with disabilities, or even increasing efficiency in the workplace, text to speech has numerous applications that are making a real impact in our daily lives.
+<video src="former/former.mp4" autoplay muted loop></video>
 
-This article provides a high-level view of features and pricing from the newest and best online text to speech generators on the market.
+NRK's "Former" is a daily puzzle game with a 7x9 grid where you clear the board by clicking on shapes to remove them and any connected shapes of the same color. The game uses four colors, and when shapes are removed, remaining blocks fall due to gravity, filling in gaps. The goal is to remove all shapes using the fewest moves possible in the shared daily puzzle. Thank you bing copilot for the explanation, now lets move on.
 
-<div id="beepbooply"></div>
+An initial guess for the number of states does not bode well: There are 33 groups to click at the start, and the optimal solution is 13 moves. If we assume that the number of available moves decreases linearly each move, this means that there would be about 1e15 states. Despite that, I went ahead with a brute force method hoping I could close the gap with algorithmic tricks.
 
-## Beepbooply
-### Beepbooply
-
-Beepbooply is a new online text to speech generator created to provide access to the latest voice models at the best prices.
-
-Providing access to over 900+ voices across 80+ languages, beepbooply sources models from Google, Microsoft, and Amazon.
-
-They offer some of the best prices along with one-time prepaid options that go for as low as $2.
-
-- 900+ voices
-- Voices from Google, Microsoft, and Amazon
-...
-
-<a href="https://beepbooply.com" target="_blank" rel="noopener noreferrer">beepbooply</a>
+## Basic algorithm
