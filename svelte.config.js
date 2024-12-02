@@ -1,6 +1,6 @@
 import adapter from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
-import { mdsvex, default_frontmatter } from 'mdsvex';
+import { mdsvex } from 'mdsvex';
 
 
 /** @type {import('@sveltejs/kit').Config} */
