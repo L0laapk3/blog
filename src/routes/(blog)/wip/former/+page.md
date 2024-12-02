@@ -5,6 +5,10 @@ date: '2024-11-30'
 featured: true
 ---
 
+<script>
+	import { base } from '$app/paths';
+</script>
+
 ## Introduction
 
 I was recently challenged to try to solve a game called "[Former](https://www.nrk.no/spill/former-1.17105310)". There have been some others who achieved some success using heuristic approaches in parallel to my attempt, but I wanted to go big and exhaustively *prove* that the found solution is optimal.
@@ -65,4 +69,4 @@ while (validMoves) {
 ### Gravity
 Here is where things get fun. The x86 instruction set has many flaws, but now I saw an opportunity to use my favorite one: parallel bit deposition.
 
-<img src="pdep.gif"/>
+<img src="../pdep.gif"/>
